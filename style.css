@@ -1,0 +1,142 @@
+:root {
+	font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+	
+	--bg-color: #121212;
+	--text-color: #d7dadc;
+	--max-width: 50rem;
+	
+	--tile-bg-1: #353537;
+	--tile-bg-2: #AC9738;
+	--tile-bg-3: #528D4D;
+	--tile-bg-4: #85C0F8;
+	--tile-bg-5: #F5793B; /* coral */
+	--tile-bg-6: #828385; /* gray */
+	
+	--tile-mside: .7rem;
+}
+
+html {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+header {
+	border-bottom: 1px solid #1F1F20;
+}
+header h1 {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	margin: 1rem auto;
+	padding: .5rem;
+	max-width: var(--max-width);
+	
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: .5rem;
+}
+
+.tile {
+	background: var(--tile-bg-1);
+	color: var(--text-color);
+	text-decoration: none;
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.tile h4 {
+	margin: 1em var(--tile-mside) .5em var(--tile-mside);
+}
+.tile p {
+	margin: .5em var(--tile-mside) 1em var(--tile-mside);
+	font-size: .8em;
+}
+
+
+/* footer */
+footer {
+	margin: 4rem auto 1rem auto;
+	padding: .5rem;
+	max-width: var(--max-width);
+}
+footer p {
+	font-size: .7rem;
+	color: gray;
+}
+footer a {
+	color: inherit;
+}
+
+
+@media (min-width: 701px) {
+
+	.d-2 {
+		grid-column: span 2;
+	}
+	.d-3 {
+		grid-column: span 3;
+	}
+	.d-2 h4, .d-3 h4 {
+		font-size: 1.2em;
+	}
+
+}
+
+@media (max-width: 700px) {
+	
+	.m-2 {
+		grid-column: span 2;
+	}
+	.m-3 {
+		grid-column: span 3;
+	}
+	
+	.bg-wordle {
+		padding-top: .2rem;
+		padding-bottom: .5rem;
+	}
+	
+}
+
+
+/* backgrounds */
+.bg-wordle {
+	background: linear-gradient(292deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,.9) 80%), url('bgs/bg-wordle.jpeg') center no-repeat;
+	background-size: cover;
+}
+.bg-nerdle {
+	background: linear-gradient(292deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,.9) 80%), url('bgs/bg-nerdle.jpg') center no-repeat;
+	background-size: cover;
+}
+.bg-dungleon {
+	background: linear-gradient(292deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,.9) 80%), url('bgs/bg-dungleon.jpg') center no-repeat;
+	background-size: cover;
+}
+
+
+.bg-1 {
+	background: var(--tile-bg-1);
+}
+.bg-2 {
+	background: var(--tile-bg-2);
+}
+.bg-3 {
+	background: var(--tile-bg-3);
+}
+.bg-4 {
+	background: var(--tile-bg-4);
+	color: #1a1a1b;
+}
+.bg-5 {
+	background: var(--tile-bg-5);
+}
+.bg-6 {
+	background: var(--tile-bg-6);
+}
