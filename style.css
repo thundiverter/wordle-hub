@@ -119,6 +119,10 @@ footer a {
 	background: linear-gradient(292deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,.9) 80%), url('bgs/bg-dungleon.jpg') center no-repeat;
 	background-size: cover;
 }
+.bg-squabble {
+	background: linear-gradient(292deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,.9) 80%), url('bgs/squabble.jpeg') center no-repeat;
+	background-size: cover;
+}
 
 
 .bg-1 {
